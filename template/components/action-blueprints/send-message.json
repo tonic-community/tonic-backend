@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_action_blueprints_send_messages",
+  "info": {
+    "name": "sendMessage",
+    "icon": "dna"
+  },
+  "options": {},
+  "attributes": {
+    "message": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "package": {
+      "dependencies": {
+        "strapi-plugin-graphql": "latest"
+      }
+    }
+  }

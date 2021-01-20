@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/protocols",
+      "handler": "protocol.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/protocols/count",
+      "handler": "protocol.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/protocols/:id",
+      "handler": "protocol.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/protocols",
+      "handler": "protocol.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/protocols/:id",
+      "handler": "protocol.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/protocols/:id",
+      "handler": "protocol.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

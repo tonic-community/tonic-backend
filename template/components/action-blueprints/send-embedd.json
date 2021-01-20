@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_action_blueprints_send_embedds",
+  "info": {
+    "name": "sendEmbedd",
+    "icon": "border-all",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "colorHex": {
+      "type": "string",
+      "regex": "^#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$",
+      "default": "#000000"
+    }
+  }
+}

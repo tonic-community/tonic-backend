@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "actions",
+  "info": {
+    "name": "Action",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "blueprint": {
+      "type": "dynamiczone",
+      "components": [
+        "action-blueprints.send-message"
+      ],
+      "required": true,
+      "max": 1,
+      "min": 1
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^[a-zA-Z0-9_]+$"
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "protocols": {
+      "via": "actions",
+      "collection": "protocol"
+    }
+  }
+}

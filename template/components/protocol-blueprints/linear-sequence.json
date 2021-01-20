@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_protocol_blueprints_linear_sequences",
+  "info": {
+    "name": "linearSequence",
+    "icon": "bolt"
+  },
+  "options": {},
+  "attributes": {
+    "startMessage": {
+      "type": "string"
+    },
+    "endMessage": {
+      "type": "string"
+    }
+  }
+}

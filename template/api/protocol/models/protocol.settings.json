@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "protocols",
+  "info": {
+    "name": "Protocol",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^[a-zA-Z0-9_]+$"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "blueprint": {
+      "type": "dynamiczone",
+      "components": [
+        "protocol-blueprints.linear-sequence"
+      ],
+      "required": true,
+      "max": 1,
+      "min": 1
+    },
+    "actions": {
+      "collection": "action",
+      "via": "protocols",
+      "dominant": true
+    }
+  }
+}
